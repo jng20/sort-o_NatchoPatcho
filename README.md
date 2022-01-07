@@ -9,6 +9,9 @@
 - Jacob Ng
   - PreGuac
 
+#### SotW
+Caprice No.24 by Paganini
+
 _____________________
 ### Best Case / Worst Case Explanation
 Because swaps are much more computationally intensive than comparisons, the number of swaps is the best metric of how computationally intensive each
