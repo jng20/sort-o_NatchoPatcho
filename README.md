@@ -28,7 +28,22 @@ adjacent elements. In order to move a small element on the "left" of the array t
 sort does not have this same issue, but a reversed array is still a worst case, because every number still needs to be moved.
 
 _____________________
-### Results
+### Bubblesort
+Best Case Scenario: 0 swaps\
+Worst Case Scenario: 4,851 swaps\
+"Average" Case Scenario: 2,546 swaps
+
+### Selection Sort
+Best Case Scenario: 0 swaps\
+Worst Case Scenario: 4,851 swaps\
+"Average" Case Scenario: 2,395 swaps
+
+### Insertion Sort
+Best Case Scenario: 0 swaps\
+Worst Case Scenario: 4,851 swaps\
+"Average" Case Scenario: 2,463 swaps
+
+### Comparison
 
 Size for all arrays: 100
 
