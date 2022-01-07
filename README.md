@@ -3,9 +3,7 @@
 ## Team Members:
 - Faiza Huda
    - Truthful Tom
-   - Huebert9
-- Iggy
-
+   - Huebert
 - Gabriel Thompson
    - Iggy
 - Jacob Ng
