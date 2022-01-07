@@ -8,10 +8,8 @@
    - Iggy
 - Jacob Ng
   - PreGuac
-  - Truthful Tom
 _____________________
 ### Bubble Sort
-
 _____________________
 ### Selection Sort
 
