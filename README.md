@@ -33,6 +33,14 @@ Best Case Scenario: 0 swaps\
 Worst Case Scenario: 4,851 swaps\
 "Average" Case Scenario: 2,546 swaps
 
+#### Best Case
+Time Complexity: O(1) swaps
+
+**Explanation:** The number of swaps is always 0 -- it will not change even if the size of the array does. Therefore, it is in "constant" time, or O(1) time.
+
+#### Worst Case
+Time Complexity: O(n^2) swaps
+
 ### Selection Sort
 Best Case Scenario: 0 swaps\
 Worst Case Scenario: 4,851 swaps\
