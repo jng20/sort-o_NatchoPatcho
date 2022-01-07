@@ -9,10 +9,10 @@
 - PreGuac
 - Truthful Tom
 _____________________
-#### Bubble Sort
+### Bubble Sort
 
 _____________________
-#### Selection Sort
+### Selection Sort
 
 _____________________
-#### Insertion Sort
+### Insertion Sort
