@@ -2,12 +2,15 @@
 
 ## Team Members:
 - Faiza Huda
-- Gabriel Thompson
-- Huebert
+   - Truthful Tom
+   - Huebert9
 - Iggy
+
+- Gabriel Thompson
+   - Iggy
 - Jacob Ng
-- PreGuac
-- Truthful Tom
+  - PreGuac
+  - Truthful Tom
 _____________________
 ### Bubble Sort
 
