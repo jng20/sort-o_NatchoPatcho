@@ -4,22 +4,60 @@ public class Driver {
 
 	public static void main( String[] args ) {
 
-		ArrayList<Comparable> a;
-		a = populate(100, 0, 100000);
-		System.out.println(a);
+    System.out.println("Worst Case Scenarios:");
+
+		ArrayList<Comparable> a = new ArrayList<Comparable>(100);
+		a = worstCasePop(a, 100);
+		System.out.println(a + "\n");
 		a = Sorts.bubbleSort(a);
-		System.out.println(a);
+		System.out.println(a + "\n");
 
-                a = populate(100, 0, 100000);
-                System.out.println(a);
-                a = Sorts.selectionSort(a);
-                System.out.println(a);
+    a = new ArrayList<Comparable>(100);
+    a = worstCasePop(a, 100);
+    System.out.println(a + "\n");
+    a = Sorts.selectionSort(a);
+    System.out.println(a + "\n");
 
-                a = populate(100, 0, 100000);
-                System.out.println(a);
-                a = Sorts.insertionSort(a);
-                System.out.println(a);
+    a = new ArrayList<Comparable>(100);
+    a = worstCasePop(a, 100);
+    System.out.println(a + "\n");
+    a = Sorts.insertionSort(a);
+    System.out.println(a + "\n");
 
+    System.out.println("Normal case scenarios");
+		a = populate(100, 0, 100000);
+		System.out.println(a + "\n");
+		a = Sorts.bubbleSort(a);
+		System.out.println(a + "\n");
+
+    a = populate(100, 0, 100000);
+    System.out.println(a + "\n");
+    a = Sorts.selectionSort(a);
+    System.out.println(a + "\n");
+
+    a = populate(100, 0, 100000);
+    System.out.println(a + "\n");
+    a = Sorts.insertionSort(a);
+    System.out.println(a + "\n");
+
+    System.out.println("Base Case Scenario");
+    a = new ArrayList<Comparable>(100);
+    a = bestCasePop(a, 100);
+		System.out.println(a + "\n");
+		a = Sorts.bubbleSort(a);
+		System.out.println(a + "\n");
+
+    a = new ArrayList<Comparable>(100);
+    a = bestCasePop(a, 100);
+    System.out.println(a + "\n");
+    a = Sorts.selectionSort(a);
+    System.out.println(a + "\n");
+
+    a = new ArrayList<Comparable>(100);
+    a = bestCasePop(a, 100);
+    System.out.println(a + "\n");
+    a = Sorts.insertionSort(a);
+    System.out.println(a + "\n");
 	}
 
   public static ArrayList populate( int size, int lo, int hi ) {
@@ -32,15 +70,17 @@ public class Driver {
     return retAL;
   }
 
-  //randomly rearrange elements of an ArrayList
-  public static void shuffle( ArrayList al ) {
-    int randomIndex;
-    for( int i = al.size()-1; i > 0; i-- ) {
-      //pick an index at random
-      randomIndex = (int)( (i+1) * Math.random() );
-      //swap the values at position i and randomIndex
-      al.set( i, al.set( randomIndex, al.get(i) ) );
+  public static ArrayList worstCasePop( ArrayList al, int len ) {
+    for( int i = len-1; i > 0; i-- ) {
+      al.add(i);
     }
+    return al;
   }
 
+  public static ArrayList bestCasePop( ArrayList al, int len ) {
+    for( int i = 0; i < len-1; i++ ) {
+      al.add(i);
+    }
+    return al;
+  }
 }
