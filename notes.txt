@@ -1,0 +1,36 @@
+Natcho Patch | Faiza Huda, PreGuac, Huebert, Gabriel Thompson, Iggy, Jacob Ng, Truthful Thompson
+APCS
+L04- Never Fear, Big O is Here!
+2022-01-07
+
+DISCOS
+ - 
+QCC
+ - 
+BUB-QA
+ - If a pass requires no swaps, what do you know?
+    - The array is sorted.
+ - After pass p, what do you know?
+    - All values decreasing from index  p-1 (inclusive) are sorted.
+ - How many passes are necessary to completely sort?
+     - For an array of length n it needs n -1 passes. 
+SEL-QA
+ - How many passes to sort n elements?
+    - n - 1 passes
+ - What do you know after pass p?
+    - After P passes the last P elements are permanent
+ - How do you know if sorted?
+    - after n passes where n is the length of the array
+ - What does a pass boil down to?
+    - Finding the largest item in the array before the last p items.
+INS-QA
+ - How many passes to sort n elements?
+    - n - 1
+ - What do you know after pass p?
+    - All of indexes 0 to p elements are sorted
+ - How will you know when sorted?
+    - When you've finished n - 1 passes
+ - What constitues a pass?
+    - Going through every adjacent pair from 0 to p
+ - What must you track?
+    - You must track p, and the current index within a pass
