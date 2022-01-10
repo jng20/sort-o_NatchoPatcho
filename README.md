@@ -39,7 +39,7 @@ Start with the first two items. If the first item is larger than the second item
 * Comparisons for size 100: 9,604 comparisons
 * Comparisons for size 200: 39,204 comparisons
 
-**Explanation:** In bubble sort, items are put into their proper place by swapping with adjacent items, in order to "bubble" towards their appropriate position. Thus, the number of swaps to move any item into its proper position depends on how far it starts from where it should be. The input being in descending order maximizes the number of these swaps, because it positions the lowest numbers at the end of the array, which means that they must take the most swaps to "bubble" towards the start.
+**Explanation:** In bubble sort, items are put into their proper place by swapping with adjacent items, in order to "bubble" towards their appropriate position. Thus, the number of swaps to move any item into its proper position depends on how far it starts from where it should be. The input being in descending order maximizes the number of these swaps, because it positions the lowest numbers at the end of the array, which means that they must take the most swaps to "bubble" towards the start. The time complexities for swaps and comparisons are therefore O(n^2), which is shown in our tests, as the number of swaps or comparisons quadruples when the size doubles.
 
 _____________________
 ## Insertion Sort
@@ -57,7 +57,7 @@ Set the partition size to 2. In one pass, go backwards through each adjacent pai
  * Comparisons for size 100: 98 comparisons
  * Comparisons for size 200: 198 comparisons
 
-**Explanation:** In each pass, the algorithm looks backwards until it finds an adjacent pair that is already sorted, and then finishes the pass. If the entire array is already sorted, each pass will terminate in its first comparison. This means that each of O(n) passes will finish in O(1) time, making the overall time complexity O(n).
+**Explanation:** In each pass, the algorithm looks backwards until it finds an adjacent pair that is already sorted, and then finishes the pass. If the entire array is already sorted, each pass will terminate in its first comparison. This means that each of O(n) passes will finish in O(1) time, making the comparison time complexity O(n). There will be no swaps because the array is already sorted, so the swap complexity will be O(1). The tests agree with this, as the number of swaps is constant, and the number of comparisons is roughly proportional.
 
 ### Worst Case
  * Arrangement: Sorted, descending
@@ -69,7 +69,7 @@ Set the partition size to 2. In one pass, go backwards through each adjacent pai
  * Comparisons for size 100: 4,851 comparisons
  * Comparisons for size 200: 19,701 comparisons
 
-**Explanation:** Each pass of insertion sort terminates when the pass'th item that is being moved has been moved into its correct spot. If the items are in descending order, the algorithm will have to "walk" each number as far away as possible, which would maximize the number of required swaps. There will be on the order of O(n) passes, each of which will take O(n) time, so the overall time complexity for comparisons will be O(n^2). The algorithm will always be swapping items backwards, so every comparisons will result in a swap. This will make the time complexity for swaps also be O(n^2).
+**Explanation:** Each pass of insertion sort terminates when the pass'th item that is being moved has been moved into its correct spot. If the items are in descending order, the algorithm will have to "walk" each number as far away as possible, which would maximize the number of required swaps. There will be on the order of O(n) passes, each of which will take O(n) time, so the time complexity for comparisons will be O(n^2). The algorithm will always be swapping items backwards, so every comparisons will result in a swap. This will make the time complexity for swaps also be O(n^2). Our tests demonstrate both of these time complexities. In both swaps and comparisons, the number quadruples when the size doubles.
 _____________________
 ## Selection Sort
 
