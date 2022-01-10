@@ -27,7 +27,7 @@ Start with the first two items. If the first item is larger than the second item
  * Comparisons for size 100: 9,604 comparisons
  * Comparisons for size 200: 39,204 comparisons
 
-**Explanation:** A swap is only made if two elements are out of order. If the array is already in ascending order, no swaps will be made. The algorithm does not end when the array is sorted, but rather when n-1 passes have been completed. So, there are on the order of n passes each of which have on the order of n comparisons, making the total number of comparisons on the order of n^2. This would make the time complexity, at best case, O(n^2).
+**Explanation:** A swap is only made if two elements are out of order. If the array is already in ascending order, no swaps will be made, so the time complexity for swaps is constant, or O(1). This is reflected, as the number of swaps for size 100 and 200 are the same. The algorithm does not end when the array is sorted, but rather when n-1 passes have been completed. So, there are on the order of n passes each of which have on the order of n comparisons, making the total number of comparisons on the order of n^2. This would make the time complexity for comparisons, at best case, O(n^2). This is reflected, as the number of comparisons between size 100 and 200 quadruples, while the size only doubles.
 
 ### Worst Case
 * Arrangement: Sorted, descending
