@@ -1,11 +1,12 @@
-Natcho Patch | Faiza Huda, PreGuac, Huebert, Gabriel Thompson, Iggy, Jacob Ng, Truthful Thompson
+Natcho Patcho | Faiza Huda, PreGuac, Huebert, Gabriel Thompson, Iggy, Jacob Ng, Truthful Thompson
 APCS
 L04- Never Fear, Big O is Here!
 2022-01-07
 
-DISCOS
+DISCO
  - The best and worst case for selection are the same, because no matter what, Java will make one swap for each pass.
- - 
+ - All of the sorting algorithms have a worst-case comparison time complexity of O(n^2).
+ - O(n^2) time is significantly less efficient than O(n) time for larger inputs.
 
 QCC
  - When the array already sorted for bubble sort, why don't we stop the loop once there are zero swaps for a pass?
