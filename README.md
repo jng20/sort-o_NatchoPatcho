@@ -20,7 +20,6 @@ Start with the first two items. If the first item is larger than the second item
 ### Best Case
  * Arrangement: Sorted, ascending
  * Time Complexity: O(1) swaps, O(n^2) comparisons
- 
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 0 swaps
@@ -33,7 +32,6 @@ Start with the first two items. If the first item is larger than the second item
 ### Worst Case
 * Arrangement: Sorted, descending
 * Time Complexity: O(n^2) swaps, O(n^2) comparisons
-
 * Passes for size 100: 98 passes
 * Passes for size 200: 198 passes
 * Swaps for size 100: 4,851 swaps
@@ -52,7 +50,6 @@ Set the partition size to 2. In one pass, go backwards through each adjacent pai
 ### Best Case
  * Arrangement: Sorted, ascending
  * Time Complexity: O(1) swaps, O(n) comparisons
-
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 0 swaps
@@ -65,7 +62,6 @@ Set the partition size to 2. In one pass, go backwards through each adjacent pai
 ### Worst Case
  * Arrangement: Sorted, descending
  * Time Complexity: O(n^2) swaps, O(n^2) comparisons
- 
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 4,851 swaps
@@ -83,7 +79,6 @@ Start from the last item. Keep track of the current pass (0-indexed). Go backwar
 ### Best Case
  * Arrangement: Sorted, ascending
  * Time Complexity: O(n) swaps, O(n^2) comparisons
-
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 98 swaps
@@ -96,7 +91,6 @@ Start from the last item. Keep track of the current pass (0-indexed). Go backwar
 ### Worst Case
  * Arrangement: Sorted, descending
  * Time Complexity: O(n) swaps, O(n^2) compa1risons
-
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 98 swaps
