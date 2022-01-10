@@ -4,9 +4,11 @@ L04- Never Fear, Big O is Here!
 2022-01-07
 
 DISCOS
+ - Best and worst case for selection are the same because no matter what, Java will make a swap
  - 
 QCC
- - 
+ - When the array already sorted for bubble sort, why don't we stop the loop once there are zero swaps for a pass?
+
 BUB-QA
  - If a pass requires no swaps, what do you know?
     - The array is sorted.

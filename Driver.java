@@ -77,7 +77,7 @@ public class Driver {
     a = Sorts.insertionSort(a);
     //System.out.println(a + "\n");
 
-    System.out.println("\nBase Case Scenario");
+    System.out.println("\nBest Case Scenario");
 
     System.out.println("\nSize: 100\n");
     a = new ArrayList<Comparable>(100);

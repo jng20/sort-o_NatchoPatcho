@@ -6,6 +6,7 @@ public class Sorts {
     public static ArrayList <Comparable> bubbleSort(ArrayList <Comparable> data) {
         int swaps = 0;
 	int comparisons = 0;
+	int passes = 0;
         for (int i = 0; i < data.size() - 1; i++) {
             for (int j = data.size() - 1; j > 0; j--) {
                 if (data.get(j).compareTo(data.get(j - 1)) < 0) {
@@ -16,7 +17,9 @@ public class Sorts {
                 }
 		comparisons++;
             }
+	    passes++;
         }
+	System.out.println("Bubble sort # of passes: " + passes);
 	System.out.println("Bubble sort # of comparisons: " + comparisons);
         System.out.println("Bubble sort # of swaps: " + swaps);
         return data;
@@ -25,6 +28,7 @@ public class Sorts {
     public static ArrayList <Comparable> selectionSort(ArrayList <Comparable> data) {
         int swaps = 0;
 	int comparisons = 0;
+	int passes = 0;
 	int highestPos;
         for (int pass = 0; pass < data.size() - 1; pass++) {
 	    highestPos = 0;
@@ -38,7 +42,9 @@ public class Sorts {
 	    data.set(pass, data.get(highestPos));
 	    data.set(highestPos, temp);
 	    swaps++;
+	    passes++;
         }
+	System.out.println("Selection sort # of passes: " + passes);
 	System.out.println("Selection sort # of comparisons: " + comparisons);
         System.out.println("Selection sort # of swaps: " + swaps);
         return data;
@@ -47,6 +53,7 @@ public class Sorts {
     public static ArrayList <Comparable> insertionSort(ArrayList <Comparable> data) {
         int swaps = 0;
 	int comparisons = 0;
+	int passes = 0;
         for (int partition = 0; partition < data.size() - 1; partition++) {
             for (int i = partition + 1; i > 0; i--) {
 		comparisons++;
@@ -58,7 +65,9 @@ public class Sorts {
                 } else
                     break;
             }
+	    passes++;
         }
+	System.out.println("Insertion sort # of passes: " + passes);
 	System.out.println("Insertion sort # of comparisons: " + comparisons);
         System.out.println("Insertion sort # of swaps: " + swaps);
         return data;
