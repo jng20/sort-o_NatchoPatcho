@@ -9,49 +9,57 @@
 - Jacob Ng
   - PreGuac
 
-#### SotW
-Caprice No.24 by Paganini
+### SotW
+"Enemy" by Imagine Dragons but then again not really
 
 _____________________
-### Best Case / Worst Case Explanation
-Because swaps are much more computationally intensive than comparisons, the number of swaps is the best metric of how computationally intensive each
-algorithm is. The best case, therefore, would be the case which requires the fewest swaps, and the worst case would be the case which requires the most swaps.
+## Bubblesort
 
-#### But what is the best case?
-In all three sorting algorithms, the case where the array is already ordered will require zero swaps. This would make it the best case. All of the sorting
-algorithms we use involve comparing elements, and swapping them if they are out of order. If all of the elements are already in order, no out-of-order pairs
-will ever be found, and so no swaps will ever be made.
+### Description
+Start with the first two items. If the first item is larger than the second item, swap them. Repeat this process for every two adjacent items in the array. This is considered one pass. Do n-1 passes.
 
-#### But what is a worst case?
-In all three algorithms, a worst case is the case where the array is in reverse order. In both bubble sort and insertion sort, swaps are made by comparing
-adjacent elements. In order to move a small element on the "left" of the array to the "right", it would need to "bubble" or "walk" all the way there. Selection
-sort does not have this same issue, but a reversed array is still a worst case, because every number still needs to be moved.
+### Best Case
+ * Arrangement: Sorted, ascending
+ * Time Complexity: O(1) swaps, O(n^2) comparisons
+ * Swaps: 0 swaps
+
+**Explanation:** A swap is only made if two elements are out of order. If the array is already in ascending order, no swaps will be made. The algorithm does not end when the array is sorted, but rather when n-1 passes have been completed. So, there are on the order of n passes each of which have on the order of n comparisons, making the total number of comparisons on the order of n^2. This would make the time complexity, at best case, O(n^2).
+
+### Worst Case
+* Arrangement: Sorted, descending
+* Time Complexity: O(n^2) swaps, O(n^2) comparisons
+* Swaps for size 100: 4,851 swaps
+
+**Explanation:** In bubble sort, items are put into their proper place by swapping with adjacent items, in order to "bubble" towards their appropriate position. Thus, the number of swaps to move any item into its proper position depends on how far it starts from where it should be. The input being in descending order maximizes the number of these swaps, because it positions the lowest numbers at the end of the array, which means that they must take the most swaps to "bubble" towards the start.
 
 _____________________
-### Bubblesort
-Best Case Scenario: 0 swaps\
-Worst Case Scenario: 4,851 swaps\
-"Average" Case Scenario: 2,546 swaps
+## Insertion Sort
 
-#### Best Case
-Time Complexity: O(1) swaps
+### Description
+Set the partition size to 2. In one pass, go backwards through each adjacent pair of two items within the first "partition" items. If the first item is larger than the second, swap them. If they are not, finish the pass, and increase the partition size by 1. Keep doing passes until the partition size reaches the array size.
 
-**Explanation:** The number of swaps is always 0 -- it will not change even if the size of the array does. Therefore, it is in "constant" time, or O(1) time.
+### Best Case
+ * Arrangement: Sorted, ascending
+ * Time Complexity: O(1) swaps, O(n) comparisons
+ * Swaps for size 100: 0 swaps
 
-#### Worst Case
-Time Complexity: O(n^2) swaps
+**Explanation:** In each pass, the algorithm looks backwards until it finds an adjacent pair that is already sorted, and then finishes the pass. If the entire array is already sorted, each pass will terminate in its first comparison. This means that each of O(n) passes will finish in O(1) time, making the overall time complexity O(n).
 
-### Selection Sort
+### Worst Case
+ * Arrangement: Sorted, descending
+ * Time Complexity: O(n^2) swaps, O(n^2) comparisons
+ * Swaps for size 100: 4,851 swaps
+
+**Explanation:** Each pass of insertion sort terminates when the item that is being moved TBC
+
+_____________________
+## Selection Sort
 Best Case Scenario: 0 swaps\
 Worst Case Scenario: 4,851 swaps\
 "Average" Case Scenario: 2,395 swaps
 
-### Insertion Sort
-Best Case Scenario: 0 swaps\
-Worst Case Scenario: 4,851 swaps\
-"Average" Case Scenario: 2,463 swaps
-
-### Comparison
+_____________________
+## Comparison
 
 Size for all arrays: 100
 
