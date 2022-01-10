@@ -4,9 +4,9 @@ public class Driver {
 
 	public static void main( String[] args ) {
 
-    System.out.println("Worst Case Scenarios:");
+    System.out.println("\nWorst Case Scenarios:");
 
-    System.out.println("Size: 100");
+    System.out.println("\nSize: 100\n");
     ArrayList<Comparable> a = new ArrayList<Comparable>(100);
     a = worstCasePop(a, 100);
     //System.out.println(a + "\n");
@@ -25,7 +25,7 @@ public class Driver {
     a = Sorts.insertionSort(a);
     //System.out.println(a + "\n");
 
-    System.out.println("Size: 200");
+    System.out.println("\nSize: 200\n");
     a = new ArrayList<Comparable>(200);
     a = worstCasePop(a, 200);
     //System.out.println(a + "\n");
@@ -44,9 +44,9 @@ public class Driver {
     a = Sorts.insertionSort(a);
     //System.out.println(a + "\n");
 
-    System.out.println("Normal case scenarios");
+    System.out.println("\nNormal case scenarios");
 
-    System.out.println("Size: 100");
+    System.out.println("\nSize: 100\n");
     a = populate(100, 0, 100000);
     //System.out.println(a + "\n");
     a = Sorts.bubbleSort(a);
@@ -61,7 +61,7 @@ public class Driver {
     //System.out.println(a + "\n");
     a = Sorts.insertionSort(a);
     //System.out.println(a + "\n");
-    System.out.println("Size: 200");
+    System.out.println("\nSize: 200\n");
     a = populate(200, 0, 100000);
     //System.out.println(a + "\n");
     a = Sorts.bubbleSort(a);
@@ -77,9 +77,9 @@ public class Driver {
     a = Sorts.insertionSort(a);
     //System.out.println(a + "\n");
 
-    System.out.println("Base Case Scenario");
+    System.out.println("\nBase Case Scenario");
 
-    System.out.println("Size: 100");
+    System.out.println("\nSize: 100\n");
     a = new ArrayList<Comparable>(100);
     a = bestCasePop(a, 100);
     //System.out.println(a + "\n");
@@ -98,7 +98,7 @@ public class Driver {
     a = Sorts.insertionSort(a);
     //System.out.println(a + "\n");
 
-    System.out.println("Size: 200");
+    System.out.println("\nSize: 200\n");
     a = new ArrayList<Comparable>(200);
     a = bestCasePop(a, 200);
     //System.out.println(a + "\n");
