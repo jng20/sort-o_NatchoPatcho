@@ -1,16 +1,15 @@
 # Natcho Patcho
 
-## Team Members:
-- Faiza Huda
-   - Truthful Tom
-   - Huebert
-- Gabriel Thompson
-   - Iggy
-- Jacob Ng
-  - PreGuac
+## DA TEAM (in order of lsat nombre)
+ - [Faiza Huda](https://www.github.com/FeiFiFoFaiza)
+     - duckies: TruthfulTom, Hubert
+ - [Jacob Ng](https://www.github.com/jng20)
+     - duckies: PreGuac
+ - [Gabriel Thompson](https://www.github.com/gthompson30)
+     - duckies: Iggy
 
 ### SotW
-"Enemy" by Imagine Dragons but then again not really
+"Enemy" by Imagine Dragons *(but then again not really)*
 
 _____________________
 ## Bubblesort
