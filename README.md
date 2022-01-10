@@ -82,11 +82,11 @@ Start from the last item. Keep track of the current pass (0-indexed). Go backwar
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 98 swaps
- * Swaps for size 200: 19,899 swaps
+ * Swaps for size 200: 198 swaps
  * Comparisons for size 100: 4,949 comparisons
- * Comparisons for size 200: 198 comparisons
+ * Comparisons for size 200: 19,899 comparisons
 
-**Explanation:** In one pass, the algorithm looks backwards to find the lowest value on or after the pass'th index. This means it needs to compare the index it "pass" with all the indexes after it, so one pass is on time complexity O(n). The entire algorithm requires doing O(n) passes, so the time complexity for comparisons is O(n^2). In one pass, once it finds the lowest value, it swaps its index with the index of pass. This means that exactly 1 swap is done per pass regardless of order, or O(1). Because there are O(n) passes and O(1) swaps per pass, the time complexity for swaps is O(n).
+**Explanation:** In one pass, the algorithm looks backwards to find the lowest value on or after the pass'th index. This means it needs to compare the index it "pass" with all the indexes after it, so one pass is on time complexity O(n). The entire algorithm requires doing O(n) passes, so the time complexity for comparisons is O(n^2). In one pass, once it finds the lowest value, it swaps its index with the index of pass. This means that exactly 1 swap is done per pass regardless of order, or O(1). Because there are O(n) passes and O(1) swaps per pass, the time complexity for swaps is O(n). Our tests agree with this too, because the number of swaps increases linearly while the number of comparisons increasing quadratically.
 
 ### Worst Case
  * Arrangement: Sorted, descending
@@ -94,8 +94,8 @@ Start from the last item. Keep track of the current pass (0-indexed). Go backwar
  * Passes for size 100: 98 passes
  * Passes for size 200: 198 passes
  * Swaps for size 100: 98 swaps
- * Swaps for size 200: 19,899 swaps
+ * Swaps for size 200: 198 swaps
  * Comparisons for size 100: 4,949 comparisons
- * Comparisons for size 200: 198 comparisons
+ * Comparisons for size 200: 19,899 comparisons
 
-**Explanation:** The worst case time complexity for both swaps and comparisons will be the same as the best case time complexity, because selection sort does not decide on whether to do a swap depending on if a pair is sorted or not. Selection sort will make O(n) comparisons for a pass regardless, and will make O(n) passes. This makes the comparisons time complexity O(n^2). It will also make one swap for each pass, even if that means swapping an item with itself.
+**Explanation:** The worst case time complexity for both swaps and comparisons will be the same as the best case time complexity, because selection sort does not decide on whether to do a swap depending on if a pair is sorted or not,so it will be O(n). Selection sort will make O(n) comparisons for a pass regardless, and will make O(n) passes. This makes the comparisons time complexity O(n^2). It will also make one swap for each pass, even if that means swapping an item with itself. Our tests agree, as the number of swaps increase linearly while the number of comparisons increase quadratically.
